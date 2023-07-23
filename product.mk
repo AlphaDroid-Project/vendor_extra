@@ -1,3 +1,5 @@
+include $(call all-makefiles-under,$(call my-dir))
+
 ifeq ($(TARGET_INCLUDE_LAWNCHAIR),true)
   PRODUCT_PACKAGES += \
     Lawnchair \
