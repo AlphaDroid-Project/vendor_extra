@@ -10,3 +10,9 @@ else
   PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.lawnchair=0
 endif
+
+# Prebuilt packages
+ifeq ($(TARGET_INCLUDE_RIMUSIC),true)
+  PRODUCT_PACKAGES += \
+    RiMusic
+endif
