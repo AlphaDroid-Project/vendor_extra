@@ -27,16 +27,6 @@ android_app_import {
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-    overrides: [
-        "Home",
-        "Launcher2",
-        "Launcher3",
-        "Launcher3QuickStep",
-        "Trebuchet",
-        "TrebuchetOverlay",
-        "TrebuchetQuickStep",
-        "NexusLauncherRelease",
-    ],
     required: [
         "privapp-permissions-app.lawnchair.xml",
         "sysconfig-app.lawnchair.xml",

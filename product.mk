@@ -1,10 +1,12 @@
-# TARGET_LAUNCHER options:
-# 1 - stock (default)
-# 2 - lawnchair
-# 3 - pixel (valid only on gapps builds)
-ifeq ($(TARGET_LAUNCHER),2)
+ifeq ($(TARGET_INCLUDE_LAWNCHAIR),true)
   PRODUCT_PACKAGES += \
     Lawnchair \
     LawnchairOverlay \
     Lawnicons
+
+  PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.lawnchair=1
+else
+  PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.lawnchair=0
 endif
