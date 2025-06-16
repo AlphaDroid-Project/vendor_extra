@@ -14,7 +14,7 @@ else
 endif
 
 # Prebuilt packages
-ifeq ($(TARGET_INCLUDE_RIMUSIC),true)
+ifeq ($(TARGET_INCLUDE_SIMPLE_TUNE),true)
   PRODUCT_PACKAGES += \
-    RiMusic
+    SimpleTune
 endif
