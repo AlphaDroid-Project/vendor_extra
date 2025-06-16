@@ -13,7 +13,11 @@ else
     persist.sys.lawnchair=0
 endif
 
-# Prebuilt packages
+# Temporarily allow previous RiMusic config to build Simple Tune
+ifeq ($(TARGET_INCLUDE_RIMUSIC),true)
+  TARGET_INCLUDE_SIMPLE_TUNE := true
+endif
+# Simple Tune
 ifeq ($(TARGET_INCLUDE_SIMPLE_TUNE),true)
   PRODUCT_PACKAGES += \
     SimpleTune
